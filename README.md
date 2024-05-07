@@ -90,6 +90,5 @@ return 0;
 -rwxr-xr-x    1 root     root         18376 Apr 17 14:20 text.o
 ```
 
-
 # RESULT:
 The programs are executed successfully.
