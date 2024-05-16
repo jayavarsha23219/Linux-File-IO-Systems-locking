@@ -18,9 +18,8 @@ Write the C Program using Linux IO Systems locking
 Execute the C Program for the desired output. 
 
 # PROGRAM:
-
-## 1.To Write a C program that illustrates files copying 
 ```
+1.To Write a C program that illustrates files copying 
 #include <unistd.h>
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -35,16 +34,8 @@ out = open("file.out", O_WRONLY|O_CREAT, S_IRUSR|S_IWUSR);
 while((nread = read(in,block,sizeof(block))) > 0)
 write(out,block,nread);
 exit(0);}
-```
 
-## OUTPUT
-```
--rwxr-xr-x    1 root     root         18348 Apr 17 14:14 file.o
-```
-
-
-## 2.To Write a C program that illustrates files locking
-```
+2.To Write a C program that illustrates files locking
 #include <fcntl.h>
 #include <stdio.h>
 #include <string.h>
@@ -83,12 +74,9 @@ close (fd);
 return 0;
 }
 ```
-
-
 ## OUTPUT
-```
--rwxr-xr-x    1 root     root         18376 Apr 17 14:20 text.o
-```
+![image](https://github.com/jayavarsha23219/Linux-File-IO-Systems-locking/assets/150780319/cf575401-0248-4da6-876e-5c350b8fca68)
+![image](https://github.com/jayavarsha23219/Linux-File-IO-Systems-locking/assets/150780319/5643d9bd-ae60-4552-9908-08e2832756a9)
 
 # RESULT:
 The programs are executed successfully.
